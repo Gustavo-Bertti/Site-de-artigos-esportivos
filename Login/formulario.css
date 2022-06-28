@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+.logo_a{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+.logo_a:hover{
+   display: none;
+}
+.logo{
+    background-color: #FF4500;
+    
+    width: 100%;
+    
+}
+img{
+    
+    border-radius: 20px;
+}
+.logi{
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+   background-color: #f4f4f4;
+   border-bottom: 3px solid rgb(75, 87, 100);
+    border-right: 3px solid rgb(75, 87, 100);
+    border-left: 3px solid rgb(233, 128, 99);
+    border-top: 3px solid rgb(233, 128, 99);
+}
+.menu{
+width: 100%;
+height: 50px;
+background-color: #FF4500;
+
+
+}
+.menu>ul{
+    list-style: none;
+    position: relative;
+    margin-left: 50px;
+}
+.menu ul li{
+    width:150px;/* largura de 150 px */
+    float:left;
+}
+.menu a{
+    padding:15px;
+    display:block;
+    text-decoration: none;
+    color: #f4f4f4;
+   
+    text-align:center;/* deixar texto centralizado
+    */
+    }
+.menu ul ul{
+list-style:none;
+position:absolute;
+visibility:hidden;
+
+
+}
+.menu ul li:hover ul{
+visibility:visible;
+}
+
+.menu a:hover{
+background-color:	#FF8C00;
+}
+.menu ul ul li{
+float:none;
+border-bottom: solid 1px #ccc;
+}
+.menu ul ul li a{
+background-color:#FFA500;
+
+}
+#bt_menu{
+display: none;
+}
+label[for='bt_menu']{
+padding:5px;
+background-color:#222;
+color:#fff;
+font-family:'Arial';
+text-align:center;
+font-size:30px;
+cursor:pointer;
+display:none;
+width:50px;
+height:50px;
+}   
+label[for='bt_menu']:hover{
+background-color:#f4f4f4;
+color:#aaa;
+}
+.form-group{
+    padding-top: 10px;
+    margin-left: 30px;
+    
+}
+.form-control{
+    height: 30px;
+    width: 390px;
+    border-radius: 5px;
+    box-shadow: 0 0 1em #FFA500;
+    border-color: #FF4500;
+    outline: none;
+    
+}
+.form-text{
+cursor: pointer;
+}
+
+@media (max-width: 800px) {
+.logo{
+    background-color: white;
+    display: flex;
+    justify-content: inline;
+}
+
+.menu{
+height: 300px;
+margin-left:-100%;
+transition:all .4s;
+
+
+}
+.form-control{
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+label[for='bt_menu']{
+display:block;
+}
+.menu>ul{
+margin-left:0;
+}
+.menu{
+margin-top:5px;
+}
+.menu ul li{
+width:100%;
+float:none;
+}
+.menu ul ul{
+position:static;
+overflow:hidden;
+max-height:0;
+transition:all .4s;
+}
+.menu ul li:hover ul{
+height:auto;
+max-height:200px;
+transition:all .4s;
+}
+#bt_menu:checked ~ .menu{
+margin-left:0;
+}
+.menu ul li a{
+    color: white;
+}
+}
+.container{
+    max-width: 100%;
+    margin-top: 80px;
+}
+.entrar_letras{
+    display: block;
+    text-align: center;
+}
+.email{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 320px;
+    height: 48px;
+}
+
+.perso{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 8px;
+    
+    
+}
+.bi_bi-person-fill{
+    color: rgb(108, 108, 108); 
+}
+.digi_email{
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    border-bottom: 3px solid rgb(75, 87, 100);
+    border-right: 3px solid rgb(75, 87, 100);
+    border-left: 3px solid rgb(233, 128, 99);
+    border-top: 3px solid rgb(233, 128, 99);
+    padding-left: 40px;
+    outline: none;
+}
+.senha{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    width: 320px;
+    height: 48px;
+}
+.chave{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 8px;
+}
+.bi_bi-key-fill{
+    color: rgb(108, 108, 108);
+}
+.pass{
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    border-bottom: 3px solid rgb(75, 87, 100);
+    border-right: 3px solid rgb(75, 87, 100);
+    border-left: 3px solid rgb(233, 128, 99);
+    border-top: 3px solid rgb(233, 128, 99);
+    padding-left: 40px;
+    outline: none;
+}
+.esqueci_senha{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    
+}
+.esqueci{
+ margin-left: 160px;
+ color: rgb(108, 108, 108);
+}
+.bottom_entrar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 320px;
+    height: 48px;
+}
+.botao_entrar{
+    width: 320px;
+    height: 48px;
+    background-color: #FF4500;
+    border-radius: 2px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+  
+}
+.bottom_criar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 320px;
+    height: 48px;
+}
+.botao_criar{
+    width: 320px;
+    height: 48px;
+    background-color: #FF4500;
+    border-radius: 2px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    
+}
+.text_do_criar{
+    text-decoration: none;
+}
+@media (max-width: 800px){
+    .container{
+        margin-top: 100px;
+    }
+}
+/*Parte do esqueceu senha começa aqui*/
+.text_recuperar{
+    display: block;
+    text-align: center;
+}
+.input_esqueceu_senha{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 320px;
+    height: 48px;
+}
+.botao_enviar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 320px;
+    height: 48px;
+}
+.senha_enviar{
+    width: 320px;
+    height: 48px;
+    background-color: #FF4500;
+    border-radius: 2px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+

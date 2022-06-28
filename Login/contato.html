@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contato</title>
+    <link rel="shortcut icon" href="logo-removebg-preview.png" type="image/x-icon">
+    <style> 
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: white;
+        }
+        .box{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 310px;
+            height: 520px;
+            margin-top: 400px;
+            color: white;
+            
+        }
+        fieldset{
+            border:3px solid darkorange;
+            width: 286px;
+            height: 486px;
+            padding: 15px;
+        }
+        legend{
+            border: 1px solid darkorange  ;
+            padding: 10px;
+            background-color: darkorange;
+            border-radius: 9px;
+        }
+        .inputbox{
+            position: relative;
+        }
+        .inputuser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+        }
+        .labelinput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: 5px;
+        }
+        .inputuser:focus ~.labelinput,
+        .inputuser:valid ~.labelinput{
+            top: -20px;
+            font-size: 12px;
+            color: darkorange;
+        }
+        #data{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+        }
+        #submit{
+            background-image: linear-gradient(to right, rgb(255,69,0), rgb(255,140,0));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .field{
+            width: 100%;
+            margin-bottom: 50px; border: 1px  solid;
+        }
+        textarea{
+            height: 150px;
+        }
+        @media (max-width: 800px) {
+                .box{
+                     display: block;
+                     margin-top: 400px;
+                     margin-left: 200px;
+                     
+                }
+            }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+      
+        <ul>
+           <li> <div class="logo"><a href="../home/index.html" class="logo_a"></a><img src="logo-removebg-preview.png" alt="" class="logi" ></a></div></li> 
+            
+            <li><a href="../Masculino/aba-produtos-masculinos.html">Masculino</a>
+                
+            <li><a href="../Feminino/aba-feminino.html">Feminino</a>
+               
+            </li>
+            <li><a href="../Acessorios/aba-acessorio.html">Acessórios</a>
+               
+            
+             
+                <li><a href="login.html">Login</a>
+                  
+          
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+       
+      <div class="form-group">
+        <label for=""></label>
+        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="  Busque seus produtos aqui ;)">
+        <small id="helpId" class="form-text "><i class="fa fa-search"></i></small>
+      </div>
+    
+    </nav>
+    
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend> <b>Contato </b></legend>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="nome" id="nome" class="inputuser" required >
+                    <label for="nome" class="labelinput">Nome Completo </label>
+                </div>
+                <br><br>    
+                <div class="inputbox">
+                    <input type="text" name="email" id="email" class="inputuser" required >
+                    <label for="email"  class="labelinput" >Email </label>
+                </div><br><br>
+                <div class="inputbox">
+                    <input type="text" name="cpf" id="cpf" class="inputuser" required >
+                    <label for="cpf"  class="labelinput">CPF</label>
+                </div>
+                <br><br> 
+                    <textarea class="field" name="mensage" placeholder="Digite sua mensagem aqui"></textarea>
+            
+                    <br><br>
+                    <input type="submit" name="submit"id="submit"> 
+             </fieldset>
+
+        </form>
+    </div>
+
+</body>
+</html>
